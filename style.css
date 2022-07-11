@@ -12,6 +12,8 @@ body {
   padding: 0;
   background: #f6f6f6;
   color: #454545;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
 }
 
 article {
@@ -45,13 +47,12 @@ article {
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: "Cormorant SC", serif;
   font-size: 48px;
   margin: 16px 0;
 }
 
 h2 {
-  font-family: sans-serif;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -86,7 +87,6 @@ footer h4 {
 }
 
 footer ul {
-  font-family: serif;
   list-style: none;
   display: flex;
   align-items: center;
