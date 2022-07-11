@@ -1,9 +1,9 @@
 /**
- * Palette: https://colorhunt.co/palette/f6f6f6ffe2e2ffc7c7aaaaaa
- * F6F6F6
- * FFE2E2
- * FFC7C7
- * AAAAAA
+ * Palette: https://colorhunt.co/palette/66806ab4c6a6ffc286fff1af
+ * 66806A
+ * B4C6A6
+ * FFC286
+ * FFF1AF
  **/
 
 html,
@@ -48,7 +48,7 @@ article {
 }
 
 h1 {
-  color: #576F72;
+  color: #66806A;
   font-family: "Cormorant SC", serif;
   font-size: 48px;
   margin: 16px 0;
@@ -59,7 +59,7 @@ h2 {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgb(223, 165, 165);
+  color: #FFC286;
 }
 
 a {
@@ -68,7 +68,7 @@ a {
 
 .primary-button {
   text-decoration: none;
-  background: #48711885;
+  background: #B4C6A6;
   color: white;
   padding: 9px 17px;
   border-radius: 8px;
