@@ -1,25 +1,47 @@
+/**
+ * Palette: https://colorhunt.co/palette/f6f6f6ffe2e2ffc7c7aaaaaa
+ * F6F6F6
+ * FFE2E2
+ * FFC7C7
+ * AAAAAA
+ **/
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background: #0a0a33;
+  background: #f6f6f6;
+  color: #454545;
 }
 
 article {
   display: flex;
 }
 
+@media (max-width: 379px) {
+  article {
+    flex-direction: column;
+  }
+}
+
 #avatar {
-  width: 50%;
   object-fit: cover;
   object-position: center;
 }
 
 .content {
-  background: #0a0a33;
-  color: white;
   flex-grow: 1;
-  padding: 150px 100px;
+  padding: 24px 18px;
+}
+
+@media (min-width: 380px) {
+  #avatar {
+    width: 50%;
+  }
+
+  .content {
+    padding: 150px 100px;
+  }
 }
 
 h1 {
@@ -33,11 +55,12 @@ h2 {
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  color: #1d73a1;
+  letter-spacing: 2px;
+  color: rgb(223, 165, 165);
 }
 
 a {
-  color: white;
+  color: #454545;
 }
 
 p {
@@ -78,7 +101,6 @@ footer ul li {
 footer ul a {
   display: flex;
   align-items: center;
-  color: white;
   gap: 4px;
   text-decoration: none;
 }
