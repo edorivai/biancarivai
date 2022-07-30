@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: #f6f6f6;
+  color: #454545;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  height: 100%;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.4;
+}
