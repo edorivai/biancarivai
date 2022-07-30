@@ -7,6 +7,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Footer } from "./components/footer";
+import { Nav } from "./components/navigation";
 import styles from "./styles/app.css";
 
 export const links: LinksFunction = () => {
@@ -40,7 +42,21 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <article className="flex flex-col h-full">
+          <Nav />
+          <img
+            src="IMG_2759.jpg"
+            className="object-cover object-center h-[50vh]"
+            alt=""
+          />
+
+          <section className="grow flex flex-col items-center">
+            <main className="max-w-screen-lg py-6 px-4 sm:py-[50px] sm:px-[100px]">
+              <Outlet />
+              <Footer />
+            </main>
+          </section>
+        </article>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
