@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       persian: "#d49556",
       axolotl: "#66806A",
+      // olive: "#6c6d20",
       olive: "#B4C6A6",
       text: "#454545",
       white: "#fff",
@@ -14,7 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Raleway", ...defaultTheme.fontFamily.sans],
-        serif: ["Cormorant SC", ...defaultTheme.fontFamily.serif],
+        serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
       },
     },
   },

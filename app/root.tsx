@@ -11,6 +11,18 @@ import { Footer } from "./components/footer";
 import { Nav } from "./components/navigation";
 import styles from "./styles/app.css";
 
+const fontFamilies = [
+  { family: "Raleway", weights: [300, 500] },
+  // { family: "Cormorant SC", weights: [300, 500] },
+  // { family: "Lora", weights: [400, 500] },
+  { family: "Playfair Display", weights: [400, 600] },
+  // { family: "Taviraj", weights: [300, 500] },
+]
+  .map(
+    (f) => `family=${f.family.replace(/ /g, "+")}:wght@${f.weights.join(";")}`
+  )
+  .join("&");
+
 export const links: LinksFunction = () => {
   return [
     { rel: "stylesheet", href: styles },
@@ -23,7 +35,7 @@ export const links: LinksFunction = () => {
     },
     {
       rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Raleway:wght@300;500&display=swap",
+      href: `https://fonts.googleapis.com/css2?${fontFamilies}&display=swap`,
     },
   ];
 };
@@ -42,21 +54,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <article className="flex flex-col h-full">
-          <Nav />
-          <img
-            src="IMG_2759.jpg"
-            className="object-cover object-center h-[50vh]"
-            alt=""
-          />
-
-          <section className="grow flex flex-col items-center">
-            <main className="max-w-screen-lg py-6 px-4 sm:py-[50px] sm:px-[100px]">
-              <Outlet />
-              <Footer />
-            </main>
-          </section>
-        </article>
+        <Nav />
+        <main className="flex flex-col m-auto max-w-screen-xl py-6 px-4 sm:px-[100px]">
+          <Outlet />
+        </main>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

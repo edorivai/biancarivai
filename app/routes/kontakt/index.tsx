@@ -3,6 +3,7 @@ import { useActionData } from "@remix-run/react";
 import { withZod } from "@remix-validated-form/with-zod";
 import { ValidatedForm, validationError } from "remix-validated-form";
 import { z } from "zod";
+import { MoonIcon } from "@heroicons/react/outline";
 
 export const validator = withZod(
   z.object({
@@ -27,21 +28,31 @@ export async function action({ request }: ActionArgs) {
 }
 
 export default function Contact() {
-  const data = useActionData();
+  // const data = useActionData();
   return (
     <>
-      <h1>Kontakt</h1>
-      <ValidatedForm
-        className="w-[400px] flex flex-col gap-4"
-        validator={validator}
+      <h1 className="text-center">Ich freue mich auf deine Nachricht!</h1>
+      <p className="text-center">Hast du Fragen zu meinem Programm?</p>
+      <p className="text-center">Oder willst du mir Feedback geben?</p>
+      <div className="h-16" />
+      <form
+        className="flex flex-wrap gap-4"
+        // validator={validator}
         method="post"
+        action="https://submit-form.com/c9JGk6k8"
       >
-        <FormInput name="fullName" label="Full Name" />
-        <FormInput name="email" label="Email" />
-        <TextArea name="message" label="Message" />
-        {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
-        <button type="submit">Submit</button>
-      </ValidatedForm>
+        <FormInput name="fullName" label="Name" className="grow" />
+        <FormInput name="email" label="Email" className="grow" />
+        <TextArea name="message" label="Deine Nachricht" className="w-full" />
+        <div className="grow" />
+        <button
+          type="submit"
+          className="group bg-olive text-white px-[17px] py-[9px] rounded-lg text-[16px] uppercase font-medium tracking-[1px] inline-block my-[50px]"
+        >
+          <MoonIcon className="inline-block transition-all w-0 group-hover:w-4 mr-0 group-hover:mr-2" />
+          Talk to me
+        </button>
+      </form>
     </>
   );
 }
@@ -50,14 +61,16 @@ export function FormInput({
   name,
   label,
   placeholder,
+  className,
 }: {
   name: string;
   label: string;
   placeholder?: string;
+  className?: string;
 }) {
   const id = `input-${name}`;
   return (
-    <div>
+    <div className={className}>
       <label htmlFor={id} className="block text-sm font-medium text-gray-700">
         {label}
       </label>
@@ -78,14 +91,16 @@ export function TextArea({
   name,
   label,
   placeholder,
+  className,
 }: {
   name: string;
   label: string;
   placeholder?: string;
+  className?: string;
 }) {
   const id = `input-${name}`;
   return (
-    <div>
+    <div className={className}>
       <label htmlFor={id} className="block text-sm font-medium text-gray-700">
         {label}
       </label>
