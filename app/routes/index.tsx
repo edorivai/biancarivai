@@ -6,7 +6,7 @@ export default function Index() {
     <>
       <div className="relative">
         <img src="IMG_2759.jpg" alt="" />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end bg-[#000] bg-opacity-25">
           <h1 className="text-white text-center text-2xl sm:text-3xl md:text-4xl mb-8 sm:mb-20">
             Entwicklung. Entfaltung. Spiritualität.
           </h1>

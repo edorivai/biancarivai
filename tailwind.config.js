@@ -11,6 +11,7 @@ module.exports = {
       olive: "#B4C6A6",
       text: "#454545",
       white: "#fff",
+      black: "#000",
     },
     extend: {
       fontFamily: {

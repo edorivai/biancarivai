@@ -22,10 +22,8 @@ export default function About() {
           Leben facettenreich zu gestalten.
         </p>
         <p>
-          Meine Arbeit geht in die Tiefe. Wir setzen da an wo du "bewusst"
-          anstehst. Mein Ziel ist es unsere Generation und somit auch die
-          nächste Generation in ein höheres Bewusstsein für die eigene
-          Potentialentfaltung und Persönlichkeitsentwicklung zu begleiten.
+          Meine Arbeit geht in die Tiefe. Wir setzen da an wo es am dringendsten
+          gebraucht wird.
         </p>
         <h1>An was ich glaube</h1>
         <ul className="list-disc pl-4">

@@ -57,8 +57,8 @@ export default function App() {
         <Nav />
         <main className="flex flex-col m-auto max-w-screen-xl py-6 px-4 sm:px-[100px]">
           <Outlet />
+          <Footer />
         </main>
-        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
