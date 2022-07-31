@@ -1,11 +1,17 @@
+import { Link } from "@remix-run/react";
+
 // can we deploy?
 export default function Index() {
   return (
     <>
-      <h2 className="text-persian text-xs font-medium uppercase tracking-[2px]">
-        Bianca Rivai
-      </h2>
-      <h1>Entwicklung. Entfaltung. Spiritualität.</h1>
+      <div className="relative">
+        <img src="IMG_2759.jpg" alt="" />
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end">
+          <h1 className="text-white text-center text-2xl sm:text-3xl md:text-4xl mb-8 sm:mb-20">
+            Entwicklung. Entfaltung. Spiritualität.
+          </h1>
+        </div>
+      </div>
       <p>
         Möchtest du in Verbindung mit dir und anderen Leben? Hast du Sehnsucht
         nach Wachstum und Potenzialentfaltung? Möchtest du in deiner vollen
@@ -14,14 +20,12 @@ export default function Index() {
       </p>
 
       <p>
-        <a
+        <Link
           className="bg-olive text-white px-[17px] py-[9px] rounded-lg text-[16px] uppercase font-medium tracking-[1px] inline-block my-[50px]"
-          href="mailto:contact@biancarivai.com"
-          target="_blank"
-          rel="noreferrer"
+          to="/kontakt"
         >
-          ⋗ Tell me all about it
-        </a>
+          ⋗ Walk with me
+        </Link>
       </p>
 
       <p>

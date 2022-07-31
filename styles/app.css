@@ -12,12 +12,16 @@ body {
 }
 
 p {
-  font-size: 19px;
+  /* font-size: 16px; */
   line-height: 1.4;
 
   margin-top: 16px;
 }
 
 h1 {
-  @apply text-axolotl font-serif text-[48px] my-4 font-bold leading-tight mt-16;
+  @apply text-axolotl font-serif text-[48px] my-4 font-bold leading-tight mt-16 tracking-wider;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
 }
