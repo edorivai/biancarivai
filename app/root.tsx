@@ -25,6 +25,11 @@ const fontFamilies = [
 
 export const links: LinksFunction = () => {
   return [
+    {
+      rel: "icon",
+      href: "/favicon.svg",
+      type: "image/svg",
+    },
     { rel: "stylesheet", href: styles },
     // Google Webfonts
     { rel: "preconnect", href: "https://fonts.googleapis.com" },
