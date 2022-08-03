@@ -21,6 +21,12 @@ p {
 h1 {
   @apply text-axolotl font-serif text-[48px] my-4 font-bold leading-tight mt-16 tracking-wider;
 }
+h2 {
+  @apply text-axolotl font-serif text-[42px] my-3 font-bold leading-tight mt-12 tracking-wider;
+}
+h3 {
+  @apply text-axolotl font-serif text-[36px] my-2 font-bold leading-tight mt-10 tracking-wider;
+}
 
 .flex-center {
   @apply flex justify-center items-center;

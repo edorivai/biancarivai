@@ -12,14 +12,15 @@ import { Nav } from "./components/navigation";
 import styles from "./styles/app.css";
 
 const fontFamilies = [
-  { family: "Raleway", weights: [300, 500] },
+  { family: "Raleway", weights: ["0,300", "0,500"] },
   // { family: "Cormorant SC", weights: [300, 500] },
   // { family: "Lora", weights: [400, 500] },
-  { family: "Playfair Display", weights: [400, 600] },
+  { family: "Playfair Display", weights: ["0,400", "0,600", "1,400"] },
   // { family: "Taviraj", weights: [300, 500] },
 ]
   .map(
-    (f) => `family=${f.family.replace(/ /g, "+")}:wght@${f.weights.join(";")}`
+    (f) =>
+      `family=${f.family.replace(/ /g, "+")}:ital,wght@${f.weights.join(";")}`
   )
   .join("&");
 

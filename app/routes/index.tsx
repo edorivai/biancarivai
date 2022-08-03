@@ -1,6 +1,7 @@
 import { Link } from "@remix-run/react";
+import { ContactButton } from "~/components/contactButton";
+import { Quote } from "~/components/quote";
 
-// can we deploy?
 export default function Index() {
   return (
     <>
@@ -12,20 +13,18 @@ export default function Index() {
           </h1>
         </div>
       </div>
-      <p>
-        Möchtest du in Verbindung mit dir und anderen Leben? Hast du Sehnsucht
-        nach Wachstum und Potenzialentfaltung? Möchtest du in deiner vollen
-        Weiblichkeit leben? Oder sehnst du dich nach einem Blick über den
-        Tellerrand?
-      </p>
+      <Quote author="Arthur Schnitzler" classes={{ quote: "text-axolotl" }}>
+        Die Seele ist ein weites Land...
+      </Quote>
+
+      <ul className="flex flex-col gap-10 font-serif text-xl">
+        <li>Hast du Sehnsucht nach Wachstum und Potenzialentfaltung?</li>
+        <li>Möchtest du in deiner vollen Weiblichkeit leben?</li>
+        <li>Oder sehnst du dich nach einem Blick über den Tellerrand?</li>
+      </ul>
 
       <p>
-        <Link
-          className="bg-olive text-white px-[17px] py-[9px] rounded-lg text-[16px] uppercase font-medium tracking-[1px] inline-block my-[50px]"
-          to="/kontakt"
-        >
-          ⋗ Walk with me
-        </Link>
+        <ContactButton />
       </p>
 
       <p>

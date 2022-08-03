@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { ContactButton } from "~/components/contactButton";
 
 export default function About() {
   return (
@@ -62,14 +63,7 @@ export default function About() {
 
         <h1>Interessiert?</h1>
         <p>
-          <p>
-            <Link
-              className="bg-olive text-white px-[17px] py-[9px] rounded-lg text-[16px] uppercase font-medium tracking-[1px] inline-block"
-              to="/kontakt"
-            >
-              ⋗ Walk With Me
-            </Link>
-          </p>
+          <ContactButton />
         </p>
       </section>
       <div className="shrink-0 sm:w-1/2">

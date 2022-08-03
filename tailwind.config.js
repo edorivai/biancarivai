@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       persian: "#d49556",
-      axolotl: "#66806A",
+      axolotl: "#996581",
       // olive: "#6c6d20",
       olive: "#B4C6A6",
       text: "#454545",
