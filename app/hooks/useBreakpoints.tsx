@@ -1,11 +1,11 @@
-import useMedia from "use-media";
+import { useMediaQuery } from "react-responsive";
 
 const desktop = { minWidth: 1024 };
 const tablet = { minWidth: 768 };
 
 export function useBreakpoints() {
   return {
-    fitsDesktop: useMedia(desktop),
-    fitsTablet: useMedia(tablet),
+    fitsDesktop: useMediaQuery(desktop),
+    fitsTablet: useMediaQuery(tablet),
   };
 }
