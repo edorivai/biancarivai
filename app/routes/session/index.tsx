@@ -36,7 +36,6 @@ export default function About() {
           </li>
         </ul>
 
-        <h1>Interessiert?</h1>
         <p>
           <ContactButton />
         </p>

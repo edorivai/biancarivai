@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import clsx from "clsx";
 
 const routes = {
-  "/": <img className="h-40" src="Logo3.svg" alt="Bianca Rivai" />,
+  "/": <img className="h-40" src="Bianca.svg" alt="Bianca Rivai" />,
   "/about": "About",
   "/kontakt": "Kontakt",
   "/session": "1:1 Session",

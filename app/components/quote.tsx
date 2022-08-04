@@ -13,7 +13,7 @@ export function Quote({
     <div className="my-20 text-right">
       <blockquote
         className={clsx(
-          "font-serif font-bold text-2xl sm:text-3xl md:text-4xl",
+          "font-serif italic font-bold text-2xl sm:text-3xl md:text-4xl",
           classes?.quote
         )}
       >
