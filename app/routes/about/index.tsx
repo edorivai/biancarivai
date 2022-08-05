@@ -61,9 +61,9 @@ export default function About() {
           </li>
         </ul>
 
-        <p>
+        <div className="flex-center">
           <ContactButton />
-        </p>
+        </div>
       </section>
       <div className="shrink-0 sm:w-1/2">
         <img src="IMG_2750.jpg" alt="" />

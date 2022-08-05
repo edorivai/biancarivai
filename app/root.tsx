@@ -16,6 +16,7 @@ const fontFamilies = [
   // { family: "Cormorant SC", weights: [300, 500] },
   // { family: "Lora", weights: [400, 500] },
   { family: "Playfair Display", weights: ["0,400", "0,600", "1,400"] },
+  { family: "Oswald", weights: ["0,400", "0,500"] },
   // { family: "Taviraj", weights: [300, 500] },
 ]
   .map(

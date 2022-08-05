@@ -23,9 +23,9 @@ export default function Index() {
         <li>Oder sehnst du dich nach einem Blick über den Tellerrand?</li>
       </ul>
 
-      <p>
+      <div className="flex-center">
         <ContactButton />
-      </p>
+      </div>
 
       <p>
         Love,

@@ -4,10 +4,10 @@ import type { PropsWithChildren } from "react";
 export function ContactButton({ children }: PropsWithChildren<{}>) {
   return (
     <Link
-      className="bg-axolotl text-white px-[17px] py-[9px] text-[16px] uppercase font-bold tracking-[1px] inline-block my-[50px]"
+      className="font-oswald bg-axolotl text-white px-20 py-[9px] text-[20px] font-bold tracking-[1px] block my-[50px] mx-auto"
       to="/kontakt"
     >
-      <span className="text-2xl font-medium">⋗</span>{" "}
+      <span className="text-2xl leading-none font-medium">⋗</span>{" "}
       {children ?? <>Walk with me</>}
     </Link>
   );

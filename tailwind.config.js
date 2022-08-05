@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Raleway", ...defaultTheme.fontFamily.sans],
+        oswald: ["Oswald", ...defaultTheme.fontFamily.sans],
         serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
       },
     },
