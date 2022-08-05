@@ -832,16 +832,16 @@ video {
   text-align: right;
 }
 
-.font-serif {
-  font-family: Playfair Display, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .font-oswald {
   font-family: Oswald, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-\[16px\] {
-  font-size: 16px;
+.font-serif {
+  font-family: Playfair Display, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-2xl {
@@ -864,13 +864,13 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
 }
 
 .font-bold {

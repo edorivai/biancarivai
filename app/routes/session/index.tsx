@@ -1,5 +1,5 @@
 import { MoonIcon } from "@heroicons/react/outline";
-// import { InlineWidget } from "react-calendly";
+import { PopupButton, PopupWidget } from "react-calendly";
 import { ContactButton } from "~/components/contactButton";
 import { Quote } from "~/components/quote";
 
@@ -67,13 +67,14 @@ export default function About() {
           </li>
         </ul>
 
-        {/* <div className="App">
-          <InlineWidget url="https://calendly.com/your_scheduling_page" />
-        </div> */}
-
-        <div className="flex-center">
-          <ContactButton />
-        </div>
+        {typeof window !== "undefined" && (
+          <PopupButton
+            className="font-oswald bg-axolotl text-white px-20 py-[9px] text-[20px] font-bold tracking-[1px] block my-[50px] mx-auto"
+            url="https://calendly.com/contact-7110"
+            text="⋗ Walk with me"
+            rootElement={document.body}
+          />
+        )}
       </section>
     </article>
   );
