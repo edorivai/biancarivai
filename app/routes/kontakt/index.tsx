@@ -47,7 +47,7 @@ export default function Contact() {
         <div className="grow" />
         <button
           type="submit"
-          className="group bg-olive text-white px-[17px] py-[9px] rounded-lg text-[16px] uppercase font-medium tracking-[1px] inline-block my-[50px]"
+          className="group bg-axolotl text-white px-[17px] py-[9px] text-[16px] uppercase font-medium tracking-[1px] inline-block my-[50px]"
         >
           <MoonIcon className="inline-block transition-all w-0 group-hover:w-4 mr-0 group-hover:mr-2" />
           Talk to me

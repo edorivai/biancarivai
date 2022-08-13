@@ -1,10 +1,9 @@
 import { MoonIcon } from "@heroicons/react/outline";
-import { PopupButton, PopupWidget } from "react-calendly";
-import { ContactButton } from "~/components/contactButton";
+import { PopupButton } from "react-calendly";
 import { Quote } from "~/components/quote";
 
 /*
-„Hart in der Sache. Aber weich von Mensch zu Mensch.“
+„Hart in der Sache, aber weich von Mensch zu Mensch.“
 
 🌬 Bist du auf der Suche nach Veränderung in deinem Leben?
 🌬 Fühlst du dich ausgepowert und kannst kaum noch schlafen?
@@ -28,7 +27,7 @@ export default function About() {
     <article className="flex gap-x-4 gap-y-20 flex-col sm:flex-row">
       <section>
         <h1 className="mt-0">1:1 Session</h1>
-        <Quote>Hart in der Sache. Aber weich von Mensch zu Mensch.</Quote>
+        <Quote>Hart in der Sache, aber weich von Mensch zu Mensch.</Quote>
         <p className="text-lg">
           🌬 Bist du auf der Suche nach Veränderung in deinem Leben?
         </p>
