@@ -626,6 +626,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -652,6 +656,10 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .w-4 {
@@ -765,11 +773,6 @@ video {
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-olive {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 198 166 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-25 {
@@ -925,7 +928,7 @@ video {
 
 html,
 body {
-  background: #f6f6f6;
+  background: #e3ceb2;
   color: #454545;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
