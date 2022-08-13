@@ -1,34 +1,6 @@
-import { ActionArgs, json } from "@remix-run/node";
-import { useActionData } from "@remix-run/react";
-import { withZod } from "@remix-validated-form/with-zod";
-import { ValidatedForm, validationError } from "remix-validated-form";
-import { z } from "zod";
 import { MoonIcon } from "@heroicons/react/outline";
 
-export const validator = withZod(
-  z.object({
-    fullName: z.string().min(1, { message: "Full name is required" }),
-    email: z
-      .string()
-      .min(1, { message: "Email is required" })
-      .email("Must be a valid email"),
-    message: z.string().min(1, { message: "Message is required" }),
-  })
-);
-
-export async function action({ request }: ActionArgs) {
-  const data = await validator.validate(await request.formData());
-  if (data.error) return validationError(data.error);
-  const { fullName, email, message } = data.data;
-
-  return json({
-    title: `Hi ${fullName}!`,
-    description: `Your email is ${email} and your message is "${message}"`,
-  });
-}
-
 export default function Contact() {
-  // const data = useActionData();
   return (
     <>
       <h1 className="text-center">Ich freue mich auf deine Nachricht!</h1>
