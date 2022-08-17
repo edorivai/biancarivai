@@ -12,6 +12,7 @@ export default function Contact() {
         // validator={validator}
         method="post"
         action="https://submit-form.com/c9JGk6k8"
+        data-botpoison-public-key="pk_4cae3b4e-a14f-45c4-a6f5-24bc6534e3a2"
       >
         <FormInput name="fullName" label="Name" className="grow" />
         <FormInput name="email" label="Email" className="grow" />
@@ -25,6 +26,7 @@ export default function Contact() {
           Talk to me
         </button>
       </form>
+      <script src="https://unpkg.com/@botpoison/browser" async></script>
     </>
   );
 }
